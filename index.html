@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-	<meta charset="UTF-8">
-	<title>Formulaire de Contact et Prise de Rendez-vous</title>
-	<link rel="stylesheet" href="gg.css">
-</head>
-<body>
-	<header>
-		<h1>GREEN BOYS FRANCE</h1>
-	</header>
+  <head>
+    <meta charset="UTF-8">
+    <title>ZOUIOULA</title>
+    <link rel="stylesheet" href="gg.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">ZOUIOULA</a></li>
+        <li><a href="#">Prise de rdv</a></li>
+        <li><a href="#">Avoir des informations</a></li>
+        <li><a href="#">ZOUIOULA</a></li>
+      </ul>
+    </nav>
+    
+    <div class="container">
+      <div class="rdv">
+        <h2>Prendre rendez-vous :</h2>
+        <form action="anwar132005@gmail.com" method="post">
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="user_nom">
+          
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="user_email">
+          
+          <label for="tel">Téléphone :</label>
+          <input type="tel" id="tel" name="user_tel">
+          
+          <label for="date">Date :</label>
+          <input type="date" id="date" name="user_date">
+          
+          <label for="heure">Heure :</label>
+          <input type="time" id="heure" name="user_heure">
+          
+          <label for="message">Message :</label>
+          <textarea id="message" name="user_message"></textarea>
+          
+          <input type="submit" value="Prendre rendez-vous">
+        </form>
+      </div>
+      
+      <div class="contact">
+        <h2>Pour en savoir plus,envoyez un msg ici :</h2>
+        <form action="anwar132005@gmail.com" method="post">
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="user_nom">
+          
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="user_email">
+          
+          <label for="message">Message :</label>
+          <textarea id="message" name="user_message"></textarea>
+          
+          <input type="submit" value="Envoyer">
+        </form>
+      </div>
+    </div>
+    
+    <button class="envoyer">Envoyer</button>
+	<p>Et qui veut parler à ma mère ou à mon père, il prend rendez-vous sur ce site.</p>
 
-	<main>
-		<section class="left-section">
-			<h2>GB 05</h2>
-			<p>les sections :</p>
-			<ul>
-				<li>PARIS</li>
-				<li>LYON</li>
-				<li>LA ROCHELLE</li>
-				<li>NANTES</li>
-				<li>MARSEILLE</li>
-				<li>MOHAMMEDIA</li>
-			</ul>
-			<p>Contactez-nous pour planifier :</p>
-			<ul>
-				<li>Téléphone : 06 81 50 63 82</li>
-				<li>E-mail : anwar132005@gmail.com</li>
-			</ul>
-		</section>
-		<section class="right-section">
-			<h2>Contactez-nous</h2>
-			<form action="mailto:anwar132005@gmail.com" method="post" enctype="text/plain">
-				<label for="nom">Nom</label>
-				<input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
-				<label for="email">Adresse e-mail</label>
-				<input type="email" id="email" name="email" placeholder="Entrez votre adresse e-mail" required>
-				<label for="telephone">Téléphone</label>
-				<input type="tel" id="telephone" name="telephone" placeholder="Entrez votre numéro de téléphone">
-				<label for="message">Message</label>
-				<textarea id="message" name="message" placeholder="Entrez votre message" required></textarea>
-				<input type="submit" value="Envoyer">
-			</form>
-		</section>
-	</main>
-
-	<footer>
-		<p>&copy; 2023 Anwar Zouioula dedicas imad zouioula respo paris </p>
-	</footer>
-</body>
+    
+    <footer>
+      <p>&copy; 2023 Anwar Zouioula. Tous droits réservés.</p>
+    </footer>
+  </body>
 </html>
 
 
