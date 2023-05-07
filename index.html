@@ -1,41 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-	<title>Anwar Store</title>
-	<link rel="stylesheet" type="text/css" href="gg.css">
+	<meta charset="UTF-8">
+	<title>Formulaire de Contact et Prise de Rendez-vous</title>
+	<link rel="stylesheet" href="gg.css">
 </head>
 <body>
 	<header>
-		<h1>Anwar Store</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Accueil</a></li>
-				<li><a href="#">Produits</a></li>
-				<li><a href="#">À propos</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
+		<h1>GREEN BOYS FRANCE</h1>
 	</header>
+
 	<main>
-		<section>
-			<h2>Nouveaux produits</h2>
+		<section class="left-section">
+			<h2>GB 05</h2>
+			<p>les sections :</p>
 			<ul>
-				<li><a href="#">Produit 1</a></li>
-				<li><a href="#">Produit 2</a></li>
-				<li><a href="#">Produit 3</a></li>
+				<li>PARIS</li>
+				<li>LYON</li>
+				<li>LA ROCHELLE</li>
+				<li>NANTES</li>
+				<li>MARSEILLE</li>
+				<li>MOHAMMEDIA</li>
+			</ul>
+			<p>Contactez-nous pour planifier :</p>
+			<ul>
+				<li>Téléphone : 06 81 50 63 82</li>
+				<li>E-mail : anwar132005@gmail.com</li>
 			</ul>
 		</section>
-		<section>
-			<h2>Produits en vedette</h2>
-			<ul>
-				<li><a href="#">Produit 4</a></li>
-				<li><a href="#">Produit 5</a></li>
-				<li><a href="#">Produit 6</a></li>
-			</ul>
+		<section class="right-section">
+			<h2>Contactez-nous</h2>
+			<form action="mailto:votre.adresse@gmail.com" method="post" enctype="text/plain">
+				<label for="nom">Nom</label>
+				<input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+				<label for="email">Adresse e-mail</label>
+				<input type="email" id="email" name="email" placeholder="Entrez votre adresse e-mail" required>
+				<label for="telephone">Téléphone</label>
+				<input type="tel" id="telephone" name="telephone" placeholder="Entrez votre numéro de téléphone">
+				<label for="message">Message</label>
+				<textarea id="message" name="message" placeholder="Entrez votre message" required></textarea>
+				<input type="submit" value="Envoyer">
+			</form>
 		</section>
 	</main>
+
 	<footer>
-		<p>Anwar Store &copy; 2023</p>
+		<p>&copy; 2023 Anwar Zouioula dedicas imad zouioula respo paris </p>
 	</footer>
 </body>
 </html>
