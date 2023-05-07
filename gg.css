@@ -1,83 +1,152 @@
-body {
-	font-family: Arial, sans-serif;
-	background-color: #222;
-	color: #fff;
+/* Mise en page globale */
+* {
+	box-sizing: border-box;
+  }
+  
+  body {
 	margin: 0;
-	padding: 0;
+	font-family: Arial, sans-serif;
   }
   
-  header, footer {
-	background-color: #0b8c11;
-	color: #fff;
-	padding: 10px;
-  }
-  
-  main {
+  .container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px;
   }
   
-  .left-section {
-	flex: 1 0 300px;
-	background-color: #0b8c11;
+  nav {
+	background-color: #448346;
 	color: #fff;
 	padding: 20px;
   }
   
-  .left-section h2, .right-section h2 {
-	margin-top: 0;
-	color: #fff;
-  }
-  
-  .right-section {
-	flex: 1 0 600px;
-	background-color: #fff;
-	color: #222;
-	padding: 20px;
-  }
-  
-  form {
+  nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
   }
   
-  label, input, textarea {
+  nav li {
+	margin-right: 20px;
+  }
+  
+  nav a {
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  /* Formulaire de prise de rendez-vous */
+  .rdv {
+	flex-basis: 45%;
+	margin-right: 30px;
+  }
+  
+  .rdv h2 {
+	margin-top: 0;
+  }
+  
+  .rdv label {
+	display: block;
 	margin-bottom: 10px;
-  }
-  
-  label {
 	font-weight: bold;
   }
   
-  input[type="text"], input[type="email"], input[type="tel"], textarea {
+  .rdv input[type="text"],
+  .rdv input[type="email"],
+  .rdv input[type="tel"],
+  .rdv input[type="date"],
+  .rdv input[type="time"],
+  .rdv textarea {
+	width: 100%;
 	padding: 10px;
-	border: none;
+	margin-bottom: 20px;
 	border-radius: 5px;
-	font-size: 16px;
+	border: 1px solid #55a853;
   }
   
-  input[type="submit"] {
-	background-color: #0b8c11;
-	color: #fff;
-	padding: 10px 20px;
+  .rdv input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
 	border: none;
-	border-radius: 5px;
-	font-size: 16px;
+	border-radius: 4px;
 	cursor: pointer;
   }
   
-  input[type="submit"]:hover {
-	background-color: #fff;
-	color: #0b8c11;
+  .rdv input[type="submit"]:hover {
+	background-color: #45a049;
   }
   
-  footer {
-	text-align: center;
-	background-color: #0b8c11;
-	color: #fff;
+  /* Formulaire de contact */
+  .contact {
+	flex-basis: 45%;
+  }
+  
+  .contact h2 {
+	margin-top: 0;
+  }
+  
+  .contact label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+  }
+  
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact textarea {
+	width: 100%;
 	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 1px solid #55a853;
+  }
+  
+  .contact textarea {
+	height: 150px;
+  }
+  
+  .contact input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  .contact input[type="submit"]:hover {
+	background-color: #45a049;
+  }
+  
+  /* Bouton d'envoi */
+  .envoyer {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  .envoyer:hover {
+	background-color: #45a049;
+  }
+  
+  /* Footer */
+  footer {
+	background-color: #448346;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
   }
 
   
